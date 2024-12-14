@@ -1,0 +1,136 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the image covers the entire background */
+    color: #333; /* Default text color */
+}
+
+/* Navigation bar styling */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #007BFF; /* Blue background */
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* White text */
+    font-size: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styling */
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white; /* White form background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+form p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+form p label {
+    flex: 1;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333; /* Text color */
+}
+
+form p input, form p select {
+    flex: 2;
+    padding: 8px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+form p button {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #007BFF; /* Blue button */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px;
+    cursor: pointer;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse; /* Remove default spacing between table cells */
+}
+
+table, th, td {
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray header background */
+}
+
+td {
+    background-color: #ffffff; /* White cell background */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007BFF; /* Blue text */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333; /* Text color */
+}
+
+/* Centered text for paragraphs */
+p.center-text {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555; /* Dark gray text */
+}

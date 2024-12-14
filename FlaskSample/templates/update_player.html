@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Update Player{% endblock %}
+
+{% block content %}
+<h1>Update Player Information</h1>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <p>
+        <label for="{{ form.first_name.id }}">{{ form.first_name.label }}</label>
+        {{ form.first_name(size=20) }}
+    </p>
+    <p>
+        <label for="{{ form.last_name.id }}">{{ form.last_name.label }}</label>
+        {{ form.last_name(size=20) }}
+    </p>
+    <p>
+        <label for="{{ form.position.id }}">{{ form.position.label }}</label>
+        {{ form.position(size=20) }}
+    </p>
+    <p>
+        <label for="{{ form.bat_order.id }}">{{ form.bat_order.label }}</label>
+        {{ form.bat_order() }}
+    </p>
+    <p>
+        <label for="{{ form.at_bats.id }}">{{ form.at_bats.label }}</label>
+        {{ form.at_bats() }}
+    </p>
+    <p>
+        <label for="{{ form.hits.id }}">{{ form.hits.label }}</label>
+        {{ form.hits() }}
+    </p>
+    <p>
+        {{ form.submit(class="btn btn-primary") }}
+    </p>
+</form>
+{% endblock %}

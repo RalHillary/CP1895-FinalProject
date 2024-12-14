@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Player List{% endblock %}
+
+{% block content %}
+<h1>Player List</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Player ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Position</th>
+            <th>Bat Order</th>
+            <th>At Bats</th>
+            <th>Hits</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for player in players %}
+        <tr>
+            <td>{{ player[0] }}</td>
+            <td>{{ player[1] }}</td>
+            <td>{{ player[2] }}</td>
+            <td>{{ player[3] }}</td>
+            <td>{{ player[4] }}</td>
+            <td>{{ player[5] }}</td>
+            <td>{{ player[6] }}</td>
+            <td>
+                <a href="{{ url_for('update', player_id=player[0]) }}">Edit</a> |
+                <a href="{{ url_for('delete', player_id=player[0]) }}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
